@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "build:app": "vite build -c vite.config.app.ts",
     "release": "pnpm build && changeset publish"
   },
   "keywords": [],

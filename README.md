@@ -24,7 +24,7 @@ pnpm install v-rap
 
 ```vue
 <script setup>
-  import { Rap } from 'v-rap'
+import { Rap } from 'v-rap'
 </script>
 
 <VRap source="bilibili" :ratio="16 / 9" />
@@ -34,7 +34,7 @@ pnpm install v-rap
 
 ```vue
 <script setup>
-  import { vRap } from 'v-rap'
+import { vRap } from 'v-rap'
 </script>
 
 <div v-rap="{ source: 'bilibili', ratio: 16 / 9 }" />

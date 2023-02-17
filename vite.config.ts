@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      formats: ['cjs', 'es']
+      formats: ['cjs', 'es'],
     },
     rollupOptions: {
       external: ['vue'],
