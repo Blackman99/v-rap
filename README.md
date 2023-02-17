@@ -24,7 +24,7 @@ pnpm install v-rap
 import { Rap } from 'v-rap'
 </script>
 
-<VRap source="bilibili" :ratio="16 / 9" />
+<Rap source="bilibili" :ratio="16 / 9" />
 ```
 
 ## Rap directive
