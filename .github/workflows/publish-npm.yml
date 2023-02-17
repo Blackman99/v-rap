@@ -28,7 +28,8 @@ jobs:
       - name: Create release and publish to npm
         id: changesets
         uses: changesets/action@v1
-        with: pnpm release
+        with: 
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
           NPM_TOKEN: ${{ secrets.N_TOKEN }}
