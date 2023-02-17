@@ -22,11 +22,8 @@ pnpm install v-rap
   import { Rap } from 'v-rap'
 </script>
 
-<VRap />
+<VRap source="bilibili" :ratio="16 / 9" />
 ```
-
-### Rap props
-
 
 ## Rap directive
 
@@ -35,5 +32,14 @@ pnpm install v-rap
   import { vRap } from 'v-rap'
 </script>
 
-<div v-rap />
+<div v-rap="{ source: 'bilibili', ratio: 16 / 9 }" />
 ```
+## Rap component props & v-rap directive values
+
+* `source`  
+The play source. Can be `'bilibili'` or `'youtube'`.  
+Default is `'bilibili'`
+* `ratio`  
+The `video` ratio. Default is `16 / 9`.  
+The width of video container is 100%. So just set the width of parent container to change the width.  
+And the height can be auto computed based on `ratio`.
