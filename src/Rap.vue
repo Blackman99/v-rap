@@ -1,27 +1,27 @@
 <script setup lang="ts">
-  import { computed, onMounted, ref } from 'vue';
-import { resolveSource } from './source';
+import { computed, onMounted, ref } from 'vue'
+import { resolveSource } from './source'
 
-  const props = withDefaults(defineProps<{
-    source?: 'bilibili' | 'youtube'
-    ratio?: number
-  }>(), {
-    source: 'bilibili',
-    ratio: 16 / 9
-  })
+const props = withDefaults(defineProps<{
+  source?: 'bilibili' | 'youtube'
+  ratio?: number
+}>(), {
+  source: 'bilibili',
+  ratio: 16 / 9,
+})
 
-  const iframeDom = ref<HTMLIFrameElement | null>(null)
-  
-  const src = computed(() => resolveSource(props.source))
+const iframeDom = ref<HTMLIFrameElement | null>(null)
 
-  const height = ref('auto')
-  onMounted(() => {
-    const width = iframeDom.value?.offsetWidth || ''
-    if(width) {
-      height.value = `${width / props.ratio}px`
-    }
-  })
+const src = computed(() => resolveSource(props.source))
+
+const height = ref('auto')
+onMounted(() => {
+  const width = iframeDom.value?.offsetWidth || ''
+  if (width)
+    height.value = `${width / props.ratio}px`
+})
 </script>
+
 <template>
   <iframe
     ref="iframeDom"

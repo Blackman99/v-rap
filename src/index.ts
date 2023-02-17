@@ -3,5 +3,5 @@ import VRap from './v-rap.js'
 
 export {
   Rap,
-  VRap
+  VRap,
 }

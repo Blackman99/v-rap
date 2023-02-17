@@ -1,21 +1,22 @@
 <script setup lang="ts">
-  import { ref } from 'vue';
-  import Rap from './Rap.vue'
-  import vRap from './v-rap'
+import { ref } from 'vue'
+import Rap from './Rap.vue'
+import vRap from './v-rap'
 
-  const source = ref< 'bilibili' | 'youtube'>('bilibili')
+const source = ref< 'bilibili' | 'youtube'>('bilibili')
 </script>
+
 <template>
   <h3>
     Select source:
   </h3>
   <label>
     Bilibili
-    <input type="radio" value="bilibili" v-model="source" />
+    <input v-model="source" type="radio" value="bilibili">
   </label>
   <label>
     Youtube
-    <input type="radio" value="youtube" v-model="source" />
+    <input v-model="source" type="radio" value="youtube">
   </label>
 
   <h3>
@@ -27,9 +28,7 @@
   <h3>
     v-rap directive
   </h3>
-  <div v-rap="{ source }" class="container">
-    
-  </div>
+  <div v-rap="{ source }" class="container" />
 </template>
 
 <style>
