@@ -1,6 +1,6 @@
 {
   "name": "v-rap",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A Vue3 implement of the rap video of the author of Vue.js",
   "scripts": {
     "dev": "vite dev",
