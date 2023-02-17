@@ -2,6 +2,11 @@
 
 A Vue3 implement of the rap video of the author of Vue.js
 
+## Preview
+
+* [Youtube](https://www.youtube.com/embed/JId_GqRjuP0)
+* [Bilibili](https://player.bilibili.com/player.html?aid=821884862&bvid=BV1jG4y1P7cy&cid=1008865725&page=1)
+
 ## Install
 
 ```sh
