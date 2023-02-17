@@ -2,7 +2,11 @@
   "name": "v-rap",
   "version": "0.0.1",
   "description": "A Vue3 implement of the rap video of the author of Vue.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "release": "pnpm build && changeset publish"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

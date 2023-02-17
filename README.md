@@ -43,3 +43,7 @@ Default is `'bilibili'`
 The `video` ratio. Default is `16 / 9`.  
 The width of video container is 100%. So just set the width of parent container to change the width.  
 And the height can be auto computed based on `ratio`.
+
+## LICENSE
+
+[MIT](./LICENSE)
