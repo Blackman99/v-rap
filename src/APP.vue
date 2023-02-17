@@ -7,33 +7,43 @@ const source = ref< 'bilibili' | 'youtube'>('bilibili')
 </script>
 
 <template>
-  <h3>
-    Select source:
-  </h3>
-  <label>
-    Bilibili
-    <input v-model="source" type="radio" value="bilibili">
-  </label>
-  <label>
-    Youtube
-    <input v-model="source" type="radio" value="youtube">
-  </label>
+  <div class="body">
+    <img src="/rapper-hand-draw.png">
 
-  <h3>
-    Rap component
-  </h3>
+    <h3>
+      Select source:
+    </h3>
+    <label>
+      Bilibili
+      <input v-model="source" type="radio" value="bilibili">
+    </label>
+    <label>
+      Youtube
+      <input v-model="source" type="radio" value="youtube">
+    </label>
 
-  <Rap :source="source" class="container" />
+    <h3>
+      Rap component
+    </h3>
 
-  <h3>
-    v-rap directive
-  </h3>
-  <div v-rap="{ source }" class="container" />
+    <Rap :source="source" class="container" />
+
+    <h3>
+      v-rap directive
+    </h3>
+    <div v-rap="{ source }" class="container" />
+  </div>
 </template>
 
-<style>
+<style scoped>
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .container {
   display: block;
-  width: 320px;
+  width: 400px;
 }
 </style>
