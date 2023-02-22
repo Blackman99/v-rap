@@ -1,3 +1,12 @@
+<h1 align="center">
+  <br>
+ <img align="center" alt="Sveltepress" src="./public/rapper-hand-draw.png" />
+  <br>
+  V Rap
+  <br>
+  <br>
+</h1>
+
 ## Introduction
 
 A Vue3 implement of the rap video of the author of Vue.js
