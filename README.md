@@ -8,6 +8,8 @@
   <br>
 </h1>
 
+> Evan You - A rapper
+
 ## Introduction
 
 A Vue3 lib to help you embed the rap video of the author of Vue.js
