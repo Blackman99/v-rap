@@ -10,7 +10,7 @@
 
 ## Introduction
 
-A Vue3 implement of the rap video of the author of Vue.js
+A Vue3 lib to help you embed the rap video of the author of Vue.js
 
 [Preview](https://blackman99.github.io/v-rap/)
 
