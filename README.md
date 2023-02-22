@@ -8,7 +8,11 @@
   <br>
 </h1>
 
-> Evan You - A rapper
+<div align="center">
+
+> Do you know that a good framework designer can also be a good rapper?
+
+</div>
 
 ## Introduction
 
