@@ -8,19 +8,22 @@ const source = ref< 'bilibili' | 'youtube'>('bilibili')
 
 <template>
   <div class="body">
-    <img src="/rapper-hand-draw.png">
-
+    <div class="cover-wrapper">
+      <img src="/rapper-hand-draw.png" class="cover">
+    </div>
     <h3>
       Select source:
     </h3>
-    <label>
-      Bilibili
-      <input v-model="source" type="radio" value="bilibili">
-    </label>
-    <label>
-      Youtube
-      <input v-model="source" type="radio" value="youtube">
-    </label>
+    <div class="options">
+      <label>
+        Bilibili
+        <input v-model="source" type="radio" value="bilibili">
+      </label>
+      <label>
+        Youtube
+        <input v-model="source" type="radio" value="youtube">
+      </label>
+    </div>
 
     <h3>
       Rap component
@@ -36,14 +39,28 @@ const source = ref< 'bilibili' | 'youtube'>('bilibili')
 </template>
 
 <style scoped>
+.cover-wrapper {
+  text-align: center;
+}
+.cover {
+  height: 30vh;
+}
 .body {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .container {
   display: block;
-  width: 400px;
+}
+label {
+  font-weight: bold;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
 }
 </style>

@@ -15,10 +15,22 @@ const iframeDom = ref<HTMLIFrameElement | null>(null)
 const src = computed(() => resolveSource(props.source))
 
 const height = ref('auto')
-onMounted(() => {
+
+const computeHeight = () => {
   const width = iframeDom.value?.offsetWidth || ''
   if (width)
     height.value = `${width / props.ratio}px`
+}
+
+onMounted(() => {
+  computeHeight()
+
+  const observe = new ResizeObserver(() => {
+    computeHeight()
+  })
+
+  if (iframeDom.value)
+    observe.observe(iframeDom.value)
 })
 </script>
 
