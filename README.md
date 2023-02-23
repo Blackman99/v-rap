@@ -1,6 +1,22 @@
+<h1 align="center">
+  <br>
+ <img align="center" alt="Sveltepress" src="./public/rapper-hand-draw.png" />
+  <br>
+  <br>
+  V Rap
+  <br>
+  <br>
+</h1>
+
+<div align="center">
+
+> Do you know that a good framework designer can also be a good rapper?
+
+</div>
+
 ## Introduction
 
-A Vue3 implement of the rap video of the author of Vue.js
+A Vue3 lib to help you embed the rap video of the author of Vue.js
 
 [Preview](https://blackman99.github.io/v-rap/)
 
@@ -24,7 +40,7 @@ pnpm install v-rap
 import { Rap } from 'v-rap'
 </script>
 
-<VRap source="bilibili" :ratio="16 / 9" />
+<Rap source="bilibili" :ratio="16 / 9" />
 ```
 
 ## Rap directive
