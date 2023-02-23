@@ -58,7 +58,7 @@ import { vRap } from 'v-rap'
 The play source. Can be `'bilibili'` or `'youtube'`.  
 Default is `'bilibili'`
 * `ratio`  
-The `video` ratio. Default is `16 / 9`.  
+The video ratio. Default is `16 / 9`.  
 The width of video container is 100%. So just set the width of parent container to change the width.  
 And the height can be auto computed based on `ratio`.
 
