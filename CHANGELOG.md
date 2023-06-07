@@ -1,5 +1,11 @@
 # v-rap
 
+## 0.3.0
+
+### Minor Changes
+
+- cf5f3a2: chore: update deps
+
 ## 0.2.0
 
 ### Minor Changes
